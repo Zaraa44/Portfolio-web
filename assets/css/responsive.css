@@ -182,5 +182,7 @@
         overflow-y: auto;
         scroll-snap-type: none;
     }
-
+.body{
+    background: transparent;
+}
 }
