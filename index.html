@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/aboutme.css">
+    <link rel="stylesheet" href="assets/css/mywork.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<div class="overlay">
+    <!-- HEADER -->
+    <header class="topbar">
+        <!-- Burger -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- FULLSCREEN MOBILE MENU -->
+    <div class="menu" id="menu">
+        <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+        <nav>
+            <a href="#hero" data-i18n="nav_home">Home</a>
+            <a href="#about" data-i18n="nav_about">About</a>
+            <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
+            <div class="lang-toggle-mobile" aria-label="Language">
+                <button type="button" class="lang-pill" data-lang="en">EN</button>
+                <button type="button" class="lang-pill" data-lang="nl">NL</button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- DESKTOP SIDEBAR -->
+    <aside class="sidebar">
+        <nav>
+            <a href="#hero" data-i18n="nav_home">Home</a>
+            <a> ─────── </a>
+            <a class="link" href="#about" data-i18n="nav_about">About</a>
+            <a> ─────── </a>
+            <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
+            <a> ─────── </a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="scroll-container">
+        <!-- HERO -->
+        <section class="section hero" id="hero">
+            <h1 class="outfit-base">
+                <span id="typewriter" aria-live="polite"></span>
+            </h1>
+            <p class="subtitle" data-i18n="hero_subtitle">Scroll down to read more about me</p>
+            <div class="scroll-arrow" aria-hidden="true">&#8595;</div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+          <div class="wrap">
+	<div class="about">
+		<div class="about-intro fade-in">
+			<h1 class="head ">ABOUT ME</h1>
+			<div class="intro-details">
+				<div class="intro-image">
+					<div class="image">
+						<img class="image-circle" src="assets/img/pf.jpg" alt="">
+
+					</div>
+				</div>
+				<div class="intro-paragraph padding"><p>Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p></div>
+			</div>
+		</div>
+		<div class="about-info">
+			<div class="profile padding fade-in">
+				<h2 >Profile</h2>
+				<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+				<h3>Fullname:</h3>
+				<p>Ieuan Tomos Walker</p>
+				<h3>Job:</h3>
+				<p>Student</p>
+                <div class="social-links padding">
+  <a href="https://www.linkedin.com/in/nisa-zara-aslan/" target="_blank" class="social-btn linkedin">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://github.com/Zaraa44" target="_blank" class="social-btn github">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+  <a href="mailto:nz.aslan44@gmail.com" class="social-btn email">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+</div>
+			</div>
+			<div class="skills padding fade-in">
+				<h2>Skills</h2>
+				<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>JQuery</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>PHP</strong>
+				   </li>
+				</ul> <!-- /skill-bars -->
+
+
+			</div>
+		</div>
+
+
+	</div>
+</div>
+        </section>
+        <!-- PORTFOLIO -->
+        <section class="section portfolio" id="portfolio">
+            <h1 class="head">Portfolio</h1>
+            <h2 >Check out my work!</h2>
+            <div class="card-container">
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title font">Lorem Ipsum</h3>
+      <h4>Tincidunt nibh at mi litora malesuada sodales.</h4>
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title font">Ullamcorper</h3>
+      <p>Lacinia sociosqu.</p>
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title font">Conubia Feugiat</h3>
+      <p>Turpis suscipit diam rutrum risus.</p>
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title font">Gravida</h3>
+      <p>Vitae class vivamus.</p>
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title font">Other Projects</h3>
+      <p></p>
+
+    </div>
+  </div>
+</div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section portfolio" id="contact">
+
+		<div class="about-buttons padding">
+			<div class="hire-me">
+				<button class="about-button">Hire me</button>
+			</div>
+			<div class="download-cv">
+				<button class="about-button">Download CV</button>
+			</div>
+		</div>
+        </section>
+    </main>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
