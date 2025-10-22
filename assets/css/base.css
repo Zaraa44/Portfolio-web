@@ -15,7 +15,7 @@ background: linear-gradient(135deg, black, #223f2f);
 }
 
 html, body {
-    background-color: #000; /* vulling achter transparante balk */
+    background-color:transparent; /* vulling achter transparante balk */
     min-height: 100%;
 }
 
