@@ -5,7 +5,6 @@ body {
     font-family: 'Outfit', sans-serif;
     color: #fff;
     height: 100vh;
-    background-color: #111e17;
     /* gradient setup */
     background: linear-gradient(45deg, #223f2f, #000000, rgb(34, 63, 47), #111e17);
     background-size: 400% 400%;
