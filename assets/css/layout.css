@@ -19,12 +19,17 @@
 
 /* Sections */
 .section {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* avoid overlap issues */
+.section + .section {
+    margin-top: 0;             /* reset any margin collapse */
 }
 
 /* Hero */
