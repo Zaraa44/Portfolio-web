@@ -1,4 +1,4 @@
-/* Reset basics */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -12,7 +12,7 @@ background: linear-gradient(135deg, black, #223f2f);
 }
 
 html, body {
-    background-color: #000; /* vulling achter transparante balk */
+    background-color: #000;
     min-height: 100%;
 }
 
@@ -26,9 +26,33 @@ body::before {
     animation: gradientShift 50s ease infinite;
 }
 
-/* keyframes for gradient movement */
 @keyframes gradientShift {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+.tag {
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    border: 2px solid #56685c;
+    transition: background 0.3s;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tag:hover {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.hero-tags {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+

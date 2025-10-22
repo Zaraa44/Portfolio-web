@@ -1,6 +1,4 @@
-/* ===================================
-   i18n.js — translations dictionary
-   =================================== */
+
 
 window.I18N = {
     en: {
@@ -9,7 +7,7 @@ window.I18N = {
         nav_portfolio: 'Portfolio',
         nav_contact: 'Contact',
         hero_title: 'Hi,<br>my name is Nisa.',
-        hero_subtitle: 'Scroll down to read more about me',
+        hero_subtitle: 'Student in data engineering',
         about_title: 'About Me',
         about_text: 'Some text here...',
         portfolio_title: 'My Work',
@@ -22,7 +20,7 @@ window.I18N = {
         nav_portfolio: 'Portfolio',
         nav_contact: 'Contact',
         hero_title: 'Hoi,<br>mijn naam is Nisa.',
-        hero_subtitle: 'Scroll naar beneden om meer over mij te lezen',
+        hero_subtitle: 'Student in data engineering',
         about_title: 'Over mij',
         about_text: 'Wat tekst hier...',
         portfolio_title: 'Mijn werk',
