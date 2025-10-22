@@ -1,21 +1,19 @@
 /* Reset basics */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-
-
-html {
-    background: linear-gradient(135deg, black, #223f2f);
+body {
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+    height: 100vh;
+    /* gradient setup */
+    background: linear-gradient(45deg, #223f2f, #000000, rgb(34, 63, 47), #111e17);
     background-size: 400% 400%;
     animation: gradientShift 50s ease infinite;
-    min-height: 100%;
+background: linear-gradient(135deg, black, #223f2f);
+    overflow: hidden;
+
 }
 
-body {
-    background: transparent;  /* laat html-achtergrond zien */
-    color: #fff;
-    min-height: 100%;
-    overflow-x: hidden;
-}
 
 /* keyframes for gradient movement */
 @keyframes gradientShift {
