@@ -161,3 +161,26 @@
         align-items: center;
     }
 }
+
+/* Default: snapping for desktop */
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
+/* Disable snapping on mobile (<= 768px) */
+@media (max-width: 768px) {
+    .scroll-container {
+        height: auto;
+        overflow-y: auto;
+        scroll-snap-type: none;
+    }
+    
+}
